@@ -76,6 +76,7 @@ h2.sansserif {
 .btn:hover {
   background-color: darkgreen;
 }
+
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .col-25, .col-75, input[type=submit] {
@@ -88,31 +89,29 @@ h2.sansserif {
 <body>
 
 <h2 class="sansserif">Directors Fiduciary Duties</h2>
-<button class="btn"><i class="fa fa-home"></i></button>
-
+<button class="btn" onClick="parent.location='index.html'"><i class="fa fa-home"></i></button>
 <div class="container">
     <div class="row">
       <div class="col-25">
-        <label for="subject">1.</label>
+        <label for="subject">8.</label>
       </div>
       <div class="col-75">
         <textarea id="subject" name="subject" placeholder="Write duty here.." style="height:100px"></textarea>
       </div>
     </div>
       <div class="col-75">
-        <textarea id="hintbox" name="hintbox" placeholder="" style="height:100px" readonly>1. Act in Good faith in what the Director considers to be in interests of the company;
-        </textarea>
+        <textarea id="hintbox" name="hintbox" placeholder="" style="height:100px" readonly>8. In addition to the general duty owed to employees under S.224 to have regard to the interests of its members.</textarea>
       </div>
     </div>
-    <!-- <div class="row">
-      <input type="submit" value="Submit">
-    </div><br /> -->
+    <div class="row">
+      <input type="submit" value="Back" onClick="parent.location='7.html'">
+    </div><br />
     <div class="row">
       <input type="submit" value="Hint ON/OFF" id="hintClick">
     </div><br />
-    <div class="row">
-      <input type="submit" value="Next" onClick="parent.location='2.html'">
-    </div>
+    <!-- <div class="row">
+      <input type="submit" value="Next">
+    </div> -->
 </div>
 <script>  
   const element = document.querySelector("#hintClick");
@@ -125,9 +124,6 @@ h2.sansserif {
   } else {
     hintelement.style.display = "none";
   }
-  // document.querySelector("next").onclick = function () {
-  //   location.href = ""
-  // }
   }
 </script>
 </body>
