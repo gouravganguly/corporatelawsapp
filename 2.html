@@ -79,25 +79,24 @@ h2.sansserif {
 <div class="container">
     <div class="row">
       <div class="col-25">
-        <label for="subject">1.</label>
+        <label for="subject">2.</label>
       </div>
       <div class="col-75">
         <textarea id="subject" name="subject" placeholder="Write duty here.." style="height:100px"></textarea>
       </div>
     </div>
       <div class="col-75">
-        <textarea id="hintbox" name="hintbox" placeholder="" style="height:100px" readonly>1. Act in Good faith in what the Director considers to be in interests of the company;
-        </textarea>
+        <textarea id="hintbox" name="hintbox" placeholder="" style="height:100px" readonly>2.  Act honestly & responsibly in relation to the conduct of the affairs of the company</textarea>
       </div>
     </div>
     <div class="row">
-      <input type="submit" value="Submit">
+      <input type="submit" value="Back" onClick="parent.location='index.html'">
     </div><br />
     <div class="row">
       <input type="submit" value="Hint ON/OFF" id="hintClick">
     </div><br />
     <div class="row">
-      <input type="submit" value="Next" onClick="parent.location='2.html'">
+      <input type="submit" value="Next">
     </div>
 </div>
 <script>  
@@ -111,9 +110,6 @@ h2.sansserif {
   } else {
     hintelement.style.display = "none";
   }
-  // document.querySelector("next").onclick = function () {
-  //   location.href = ""
-  // }
   }
 </script>
 </body>
